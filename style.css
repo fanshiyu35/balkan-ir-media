@@ -1,0 +1,222 @@
+/* Balkan Informatics Review - newspaper-style */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Times New Roman', 'Liberation Serif', serif;
+  background: #f4f1ea;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.masthead {
+  background: #111111;
+  color: #f4f1ea;
+  padding: 22px 0 18px;
+  border-bottom: 1px solid #444;
+}
+
+.masthead-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 28px;
+  text-align: center;
+}
+
+.paper-name {
+  font-family: 'Times New Roman', serif;
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  text-decoration: none;
+  color: #f4f1ea;
+  display: block;
+}
+
+.paper-subtitle {
+  font-size: 12px;
+  color: #c9c2b1;
+  margin-top: 6px;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.dateline {
+  background: #000;
+  color: #c9c2b1;
+  font-size: 11px;
+  padding: 6px 0;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border-bottom: 3px double #c9c2b1;
+}
+
+nav.top-nav {
+  background: #1f1f1f;
+  padding: 10px 0;
+  border-bottom: 1px solid #555;
+}
+
+nav.top-nav .nav-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 28px;
+  text-align: center;
+}
+
+nav.top-nav a {
+  color: #f4f1ea;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 0 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: 'Georgia', serif;
+}
+
+nav.top-nav a:hover { color: #d4a017; }
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 36px 28px;
+}
+
+.lead-story {
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 28px;
+  margin-bottom: 32px;
+}
+
+.lead-story h1 {
+  font-size: 38px;
+  line-height: 1.15;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+.lead-story h1 a { color: #1a1a1a; text-decoration: none; }
+.lead-story h1 a:hover { color: #8b0000; }
+
+.lead-story .byline,
+.byline {
+  font-size: 12px;
+  color: #555;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+
+.lead-story .lead-excerpt {
+  font-size: 17px;
+  color: #2c2c2c;
+  column-count: 2;
+  column-gap: 32px;
+  column-rule: 1px solid #d4cdb8;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  border-top: 1px solid #c9c2b1;
+  padding-top: 30px;
+}
+
+.story {
+  border-bottom: 1px dotted #999;
+  padding-bottom: 22px;
+}
+
+.story h2 {
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.story h2 a { color: #1a1a1a; text-decoration: none; }
+.story h2 a:hover { color: #8b0000; }
+
+.story p { font-size: 15px; color: #333; }
+
+article.full-article {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #fffdf5;
+  padding: 48px 56px;
+  border: 1px solid #c9c2b1;
+}
+
+article.full-article h1 {
+  font-size: 34px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+article.full-article .byline { margin-bottom: 26px; padding-bottom: 14px; border-bottom: 1px solid #c9c2b1; }
+
+article.full-article p {
+  margin-bottom: 16px;
+  font-size: 16.5px;
+  text-align: justify;
+}
+
+article.full-article p.lead-para::first-letter {
+  font-size: 56px;
+  float: left;
+  line-height: 0.9;
+  padding: 4px 8px 0 0;
+  font-weight: 700;
+  color: #8b0000;
+}
+
+article.full-article h3 {
+  font-size: 19px;
+  margin: 24px 0 10px;
+  font-style: italic;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+article.full-article blockquote {
+  border-left: 4px solid #8b0000;
+  padding: 8px 18px;
+  margin: 20px 0;
+  font-style: italic;
+  color: #2c2c2c;
+  background: #f4f1ea;
+}
+
+.about-page {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #fffdf5;
+  padding: 48px 56px;
+  border: 1px solid #c9c2b1;
+}
+
+.about-page h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.about-page p { margin-bottom: 14px; font-size: 16px; text-align: justify; }
+
+footer.paper-footer {
+  background: #111111;
+  color: #c9c2b1;
+  padding: 24px 0;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+footer.paper-footer p { padding: 4px 0; }
